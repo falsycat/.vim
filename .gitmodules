@@ -19,3 +19,6 @@
 [submodule "bundle/vim-translator"]
 	path = bundle/vim-translator
 	url = https://github.com/voldikss/vim-translator
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/preservim/tagbar
