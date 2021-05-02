@@ -28,6 +28,8 @@ set autoindent
 set shiftwidth=2
 set mouse=
 
+set cinoptions+=l1
+
 filetype plugin indent on
 
 
