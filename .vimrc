@@ -83,3 +83,17 @@ execute pathogen#infect()
 " ---- plugin: onedark.vim ----
 "
 colorscheme onedark
+
+
+"
+" ---- plugin: ale ----
+"
+let g:ale_lint_on_text_changed = 0
+let g:ale_sign_error   = 'E'
+let g:ale_sign_warning = 'W'
+let g:ale_echo_msg_format = '[%linter%]%code: %%s'
+
+let g:ale_linters = { 'cpp': ['cppcheck', 'cpplint'] }
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
