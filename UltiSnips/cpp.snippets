@@ -1,0 +1,38 @@
+priority -50
+extends c
+priority -49
+
+snippet namespace "namespace specification"
+namespace $1 {
+
+$0
+
+}  // namespace $1
+endsnippet
+
+snippet struct "struct definition"
+struct $1 {
+};
+endsnippet
+
+snippet class "class definition"
+class $1 {
+	$0
+};
+endsnippet
+
+snippet copymove "copy move constructors and operators"
+$1(const $1&)${2: = default;}
+$1($1&&)${2: = default;}
+
+$1& operator=(const $1&)${2: = default;}
+$1& operator=($1&&)${2: = default;}
+endsnippet
+
+snippet nocopymove "delete evils"
+$1(const $1&) = delete;
+$1($1&&) = delete;
+
+$1& operator=(const $1&) = delete;
+$1& operator=($1&&) = delete;
+endsnippet

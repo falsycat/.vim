@@ -1,0 +1,38 @@
+priority -50
+
+snippet //nocopy
+// No copyright
+endsnippet
+
+snippet #inc "include library header"
+#include <${1:stdlib.h}>
+endsnippet
+
+snippet #incl "include local header"
+#include "${1:header.h}"
+endsnippet
+
+snippet #once "include guard"
+#pragma once
+endsnippet
+
+snippet struct "struct definition"
+typedef struct $1 {
+	$0
+} $1;
+endsnippet
+
+snippet main
+int main(int argc, char** argv) {
+	$0
+}
+endsnippet
+
+snippet printf
+printf("$1"$2);
+$0
+endsnippet
+
+snippet unuse
+(void) $0
+endsnippet
