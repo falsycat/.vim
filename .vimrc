@@ -68,12 +68,6 @@ vmap <Space>t <Plug>TranslateV
 
 
 "
-" ---- plugin: tagbar
-"
-nmap <Space>c :TagbarToggle<CR>
-
-
-"
 " ---- plugin: pathogen ----
 "
 execute pathogen#infect()
