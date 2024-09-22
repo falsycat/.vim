@@ -28,3 +28,6 @@
 [submodule "bundle/vim-transparent"]
 	path = bundle/vim-transparent
 	url = https://github.com/tribela/vim-transparent
+[submodule "bundle/vim-fern"]
+	path = bundle/vim-fern
+	url = https://github.com/lambdalisue/vim-fern
