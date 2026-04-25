@@ -87,7 +87,7 @@ let g:ale_sign_error   = 'E'
 let g:ale_sign_warning = 'W'
 let g:ale_echo_msg_format = '[%linter%]%code: %%s'
 
-let g:ale_linters = { 'cpp': ['cppcheck', 'cpplint'] }
+let g:ale_linters = { 'cpp': ['cppcheck', 'cpplint'], 'typescript': ['tsserver', 'eslint'] }
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
@@ -105,4 +105,4 @@ let g:UltiSnipsEditSplit="vertical"
 "
 " ---- plugin: Fern
 "
-nmap <Space>f :Fern . -drawer -reveal=%<CR>
+nmap <Space>f :Fern . -drawer -reveal=%<CR> -keep
