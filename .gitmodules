@@ -22,9 +22,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/dense-analysis/ale
-[submodule "bundle/account-book.vim"]
-	path = bundle/account-book.vim
-	url = https://git.falsy.cat/falsycat/account-book.vim.git
 [submodule "bundle/vim-transparent"]
 	path = bundle/vim-transparent
 	url = https://github.com/tribela/vim-transparent
